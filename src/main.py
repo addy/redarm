@@ -17,4 +17,4 @@ if len(argv) > 1: recipient = argv[1]
 
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 messenger = Messenger(client, PHONE_NUMBER)
-messenger.sendText(recipient)
+messenger.sendTexts(recipient)
